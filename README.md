@@ -2,7 +2,7 @@
 
 Simple guestbook built with Lumen and VueJs, inspired by [Laracasts guestbook](https://github.com/laracasts/Laravel-and-Vue) but a little bit different.
 
-You can find a demo hosted on my personal site's guestbook [Guestbook](http://claudioludovico.panetta.it/guestbook)
+<del>You can find a demo hosted on my personal site's guestbook [Guestbook](http://claudioludovico.panetta.it/guestbook)</del>
 
 # How to install
 
