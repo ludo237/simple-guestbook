@@ -41,7 +41,7 @@
                     </form>
                 </div>
                 <div class="col-md-7">
-                    <header>Latest Messages</header>
+                    <h1 class="text-center">Latest Messages</h1>
                     <article class="panel panel-default" v-repeat="messages">
                         <div class="panel-heading">
                             <strong>From</strong>
