@@ -19,7 +19,7 @@ final class GuestbookController extends BaseController
     final public function retrieveMessages()
     {
         // TODO: If there's a better solution for this, I'm listening...
-        $messages = DB::table("messages")->get();
+        $messages = DB::table("messages")->orderBy("created_at", "DESC")->get();
         $messages = collect($messages);
         $messages->each(function($message){
             $humans = Carbon::createFromFormat("Y-m-d H:i:s", $message->created_at)->diffForHumans();
@@ -53,6 +53,6 @@ final class GuestbookController extends BaseController
         );
 
         // Print a nice message
-        return response()->json("Messaged posted: {$id}. Thank you!", 200);
+        return response()->json("Messages posted: {$id}. Thank you!", 200);
     }
 }
