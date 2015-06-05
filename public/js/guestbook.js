@@ -38,9 +38,9 @@ new Vue({
             this.newMessage = { name: '', message: '' };
 
             this.$http.post('api/messages', message, function(response){
-                this.messages.push(message);
                 this.submitted = true;
                 this.response = response;
+                this.fetchMessages();
             }).error(function(errorResponse){
                 console.log(errorResponse);
                 alert("Failed to insert your message");
