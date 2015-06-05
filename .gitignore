@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+*.iml
+out
+gen
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+.env
+vendor
+composer.lock
+storage/database.sqlite
+
+
