@@ -9,8 +9,10 @@ but a little bit different, and better.
 # How to install
 
 * Clone this repository or download it
+* Open terminal and run `composer install`
 * Create a `database.sqlite` file in `storage/`
 * Open terminal and run `php artisan migrate`
+* Open terminal and run `vendor/bin/phpunit` to run little tests
 * Enjoy
 
 # Contribute
